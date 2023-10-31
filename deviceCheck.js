@@ -15,4 +15,9 @@ window.onload = function() {
     notice.id = 'notice1';
     document.body.appendChild(notice);
     document.getElementById('notice1').innerHTML = checkDevice();
+
+    // Thông báo sẽ tự động ẩn sau 10 giây
+    setTimeout(function() {
+        document.getElementById('notice1').style.display = 'none';
+    }, 10000); // 10000 milliseconds = 10 seconds
 }

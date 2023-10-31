@@ -46,3 +46,14 @@ function speak(word) {
     // Phát âm từ
     window.speechSynthesis.speak(utterance);
 }
+function closeNotice() {
+    document.getElementById('notice').style.display = 'none';
+  }
+  function openMenu() {
+    var menu = document.getElementById('menu');
+    if (menu.style.display === "none") {
+      menu.style.display = "block";
+    } else {
+      menu.style.display = "none";
+    }
+  }

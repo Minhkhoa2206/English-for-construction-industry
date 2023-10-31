@@ -42,3 +42,14 @@ function lookup() {
 
     output.innerHTML = "Word not found in dictionary.";
 }
+function closeNotice() {
+    document.getElementById('notice').style.display = 'none';
+  }
+function openMenu() {
+    var menu = document.getElementById('menu');
+    if (menu.style.display === "none") {
+      menu.style.display = "block";
+    } else {
+      menu.style.display = "none";
+    }
+  }
