@@ -53,3 +53,11 @@ footer {
     border: 1px solid black;
     padding: 10px;
 }
+h3 {
+    font-size: 20px; /* Cỡ chữ */
+    color: #00aeff; /* Màu chữ */
+    position: fixed; /* Vị trí cố định */
+    bottom: 0; /* Dưới cùng */
+    width: 100%; /* Chiều rộng */
+    text-align: center; /* Căn giữa */
+  }
