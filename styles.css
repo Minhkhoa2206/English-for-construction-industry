@@ -65,6 +65,14 @@ h3 {
     border: 1px solid black;
     padding: 10px;
 }
+#notice1 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #f9ed69;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
 
 /* Đối với điện thoại di động */
 @media only screen and (max-width: 600px) {
@@ -85,12 +93,4 @@ h3 {
    #notice {
        width: auto;
    }
-}
-#notice1 {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: #f9ed69;
-    padding: 10px;
-    border-radius: 10px 10px 0 0;
 }
