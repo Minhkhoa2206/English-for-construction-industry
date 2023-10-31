@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styles2.css">
+<link rel="icon" href="icon.jpg" type="image/jpg">
+</head>
+<body>
+
+<h2>English for construction industry</h2>
+
+<select id="language" onchange="changeLanguage()">
+  <option value="vi-en">Vietnamese to English</option>
+  <option value="en-vi">English to Vietnamese</option>
+</select>
+
+<input id="word" type="text">
+<button onclick="lookup()">Tra cứu</button>
+
+<p id="output"></p>
+
+<script src="data2.js"></script>
+<script src="main2.js"></script>
+<!-- Thêm dòng chữ vào cuối trang web -->
+<footer>Trang Web Minh Khoa, Năm 4 Chuyên Ngành Xây Dựng</footer>
+</body>
+<div id="notice">
+  <h2>Chú ý</h2>
+  <p>Website đang ở giai đoạn demo, tính năng dịch tiếng Việt sang Tiếng Anh chưa hoàn thiện.</p>
+</div>
+</html>

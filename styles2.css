@@ -1,0 +1,55 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f5f5f5;
+    padding: 30px;
+    color: #333;
+}
+
+h2 {
+    color: #666;
+    text-shadow: 2px 2px 4px #999;
+}
+
+select, input, button {
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+button {
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s; /* Transition */
+}
+
+button:hover {
+    background-color: #007B9A; /* Darker blue */
+}
+
+#output {
+    padding: 30px;
+    background-color: #eee;
+    border-radius: 5px; /* Rounded corners */
+}
+footer {
+    font-size: 20px; /* Cỡ chữ */
+    color: #00aeff; /* Màu chữ */
+    position: fixed; /* Vị trí cố định */
+    bottom: 0; /* Dưới cùng */
+    width: 100%; /* Chiều rộng */
+    text-align: center; /* Căn giữa */
+  }
+#notice {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 10px;
+}
