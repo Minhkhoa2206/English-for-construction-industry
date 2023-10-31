@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles3.css">
+    <link rel="icon" href="icon.jpg" type="image/jpg">
+    <title>English for construction industry</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="menu-btn" onclick="openMenu()">≡</div>
+    <div id="menu" style="display: none;">
+        <a href="http://www.ketcaumkpr.id.vn" target="_blank">Trang Web</a>
+        <a href="index.html" target="_blank"> Dịch TA Chuyên Ngành Xây Dựng</a>
+    </div>
+    <h1 id="header"></h1>
+    <ul id="fileContent"></ul>
+
+    <script src="data4.js"></script>
+    <script src="main2.js"></script>
+    <script src="deviceCheck.js"></script>
+    <script>
+        // Get the ul element
+        const ul = document.getElementById('fileContent');
+
+        // Create a li element for each item in the data array and append it to the ul
+        let wordCount = 0;
+        data.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item.replace('::', ':');
+            ul.appendChild(li);
+            wordCount++;
+        });
+
+        // Display the word count in the header
+        const header = document.getElementById('header');
+        header.textContent = wordCount + ' từ vựng tiếng Anh chuyên ngành xây dựng';
+    
+    </script>
+    <footer> Minh Khoa, Năm 4 Chuyên Ngành Xây Dựng - Liên hệ: 0867544809</footer>
+    <div id="notice">
+        <h4>Chú ý <span class="close-btn" onclick="closeNotice()">X</span></h4>
+        <p>Website đang ở giai đoạn phát triển, </p>
+      </div>
+</body>
+</html>
