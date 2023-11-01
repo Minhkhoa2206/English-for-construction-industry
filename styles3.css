@@ -110,3 +110,47 @@ footer {
   width: 100%; 
   text-align: center; 
 }
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  ul {
+    padding: 5px;
+  }
+
+  li {
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+  .menu-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  #menu {
+    max-width: 100%;
+  }
+
+  #menu a {
+    padding: 8px 12px;
+  }
+
+  #notice, #notice1 {
+    width: auto;
+    position: static;
+    border-radius: 0;
+  }
+
+  footer {
+    font-size: 16px;
+    position: static;
+    width: auto;
+    padding: 10px;
+  }
+}
