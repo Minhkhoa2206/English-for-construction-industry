@@ -1,90 +1,112 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #333;
-    color: #f0f0f0;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #f0f0f0;
+  padding: 20px;
 }
 
 h1 {
-    color: #ff6347;
-    text-align: center;
+  color: #ff6347;
+  text-align: center;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 li {
-    background-color: #444;
-    border: 1px solid #555;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+  background-color: #444;
+  border: 1px solid #555;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 li:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 li::before {
-    content: '» ';
-    color: #ff6347;
+  content: '» ';
+  color: #ff6347;
 }
 .menu-btn {
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-#menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 10px;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  #menu a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+  background-color: #4682B4; /* Màu xanh dương, giống màu của các biển chỉ dẫn công trình */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s; /* Hiệu ứng chuyển đổi */
+  font-size: 18px; /* Kích thước chữ */
+  font-weight: bold; /* Độ đậm của chữ */
+  padding: 15px 25px; /* Khoảng cách giữa chữ và viền nút */
+  border-radius: 50%; /* Bo tròn nút */
+}
 
-  #menu a:hover {
-    background-color: #198900
-  }
+.menu-btn:hover {
+  background-color: #4169E1; /* Màu xanh dương đậm hơn khi di chuột qua */
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); /* Hiệu ứng bóng mờ khi di chuột qua */
+}
+
+.menu-btn:active {
+  background-color: #3e8e41; /* Màu xanh lá cây khi nhấn vào nút */
+  box-shadow: 0 5px #666; /* Hiệu ứng bóng mờ khi nhấn vào nút */
+  transform: translateY(4px); /* Di chuyển nút xuống một chút khi nhấn vào */
+}
+
+#menu {
+  border-radius: 15px; /* Bo tròn góc của menu */
+  overflow: hidden; /* Cắt bỏ phần nội dung nằm ngoài viền bo tròn */
+}
+
+#menu {
+  max-width: 300px; /* Giới hạn chiều rộng tối đa của menu */
+  border-radius: 15px; /* Bo tròn góc của menu */
+  overflow: hidden; /* Cắt bỏ phần nội dung nằm ngoài viền bo tròn */
+}
+
+#menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none; /* Loại bỏ gạch chân */
+  display: block;
+  background-color: #f9f9f9; /* Thêm nền cho liên kết */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà cho màu nền */
+}
+
+#menu a:hover {
+  background-color: #f1f1f1; /* Thay đổi màu nền khi di chuột qua liên kết */
+}
 #notice {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 300px;
-    background-color: #007a4f; /* Màu vàng, giống màu của các biển cảnh báo công trình */
-    border: 1px solid black;
-    padding: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  background-color: #007a4f; /* Màu vàng, giống màu của các biển cảnh báo công trình */
+  border: 1px solid black;
+  padding: 10px;
 }
 .close-btn {
-    float: right;
-    cursor: pointer;
-  }
-  #notice1 {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: #007a4f;
-    padding: 10px;
-    border-radius: 10px 10px 0 0;
+  float: right;
+  cursor: pointer;
+}
+#notice1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #007a4f;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
 }
 footer {
-    font-size: 20px; 
-    color: #ffffff; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    text-align: center; 
+  font-size: 20px; 
+  color: #ffffff; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  text-align: center; 
 }
