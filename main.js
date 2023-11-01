@@ -1,3 +1,13 @@
+// Hàm thay đổi ngôn ngữ
+function changeLanguage() {
+    currentLanguage = document.getElementById("language").value;
+    if (currentLanguage === "en-vi") {
+        window.location.href = "index.html";
+    } else if (currentLanguage === "vi-en") {
+        window.location.href = "index2.html";
+    }
+}
+
 function lookup() {
     var word = document.getElementById("word").value.toLowerCase(); // Convert the input word to lowercase
     var output = document.getElementById("output");
