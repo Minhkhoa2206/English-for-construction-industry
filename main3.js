@@ -44,7 +44,8 @@ setInterval(function() {
         console.log('%c⚠️ Dừng Lại ! , ', 'color: red; font-size: 30px;');
         console.log('%c⚠️ Bạn Tính Làm Gì Cơ Chứ ! , ', 'color: red; font-size: 30px;');
         console.log('%c⚠️ Không Có Gì Để Phá Đâu ! , ', 'color: red; font-size: 30px;');
-        console.log('%c⚠️ Mọi thắc mắc Liên Hệ: 0867544809 ! , ', 'color: red; font-size: 30px;');
+         console.log('%c⚠️Lưu ý: Mọi hành vi ăn cắp chất xám và ý tưởng của người khác điều là vi phạm pháp luật và vi phạm đạo đức nhân cách sống của con người! , ', 'color: red; font-size: 30px;');
+        console.log('%c⚠️ Mọi thắc mắc Liên Hệ: 0867544809 ! , ', 'color: b;ue; font-size: 30px;');
         devtools.opened = false;
     }
 }, 1000);
