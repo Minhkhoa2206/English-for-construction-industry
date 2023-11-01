@@ -118,3 +118,24 @@ footer {
   #menu a:hover {
     background-color: #f1f1f1
   }
+  #suggestionBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  #suggestionBox button {
+    flex: 1 0 20%; /* Mỗi hàng sẽ chứa tối đa 5 từ */
+    background: white;
+    color: black;
+    border: none;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  #suggestionBox button:hover {
+    background-color: #f1f1f1;
+  }
+  
