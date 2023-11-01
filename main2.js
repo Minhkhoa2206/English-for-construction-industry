@@ -46,14 +46,52 @@ function speak(word) {
     // Phát âm từ
     window.speechSynthesis.speak(utterance);
 }
+
 function closeNotice() {
     document.getElementById('notice').style.display = 'none';
-  }
-  function openMenu() {
+}
+
+function openMenu() {
     var menu = document.getElementById('menu');
     if (menu.style.display === "none") {
       menu.style.display = "block";
     } else {
       menu.style.display = "none";
     }
+}
+
+// Get the input field
+var input = document.getElementById("word");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Get the current value of the input field
+  var word = input.value.toLowerCase();
+
+  // Clear the suggestion box
+  var suggestionBox = document.getElementById("suggestionBox");
+  suggestionBox.innerHTML = "";
+
+  // Check each word in the dictionary
+  for (var key in dictionary) {
+    // If the word starts with the input value
+    if (key.toLowerCase().startsWith(word)) {
+      // Create a new suggestion button
+      var btn = document.createElement("BUTTON");
+      btn.innerHTML = key;
+      btn.onclick = function() {
+        // When the button is clicked, update the input field with this word and lookup
+        input.value = this.innerHTML;
+        lookup();
+      }
+
+      // Add the button to the suggestion box
+      suggestionBox.appendChild(btn);
+    }
+
+    // Stop suggesting words after finding 10 matches
+    if (suggestionBox.childNodes.length >= 10) {
+      break;
+    }
   }
+});
