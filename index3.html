@@ -18,24 +18,6 @@
     <script src="data3.js"></script>
     <script src="main3.js"></script>
     <script src="deviceCheck.js"></script>
-    <script>
-        // Get the ul element
-        const ul = document.getElementById('fileContent');
-
-        // Create a li element for each item in the data array and append it to the ul
-        let wordCount = 0;
-        data.forEach(item => {
-            const li = document.createElement('li');
-            li.textContent = item.replace('::', ':');
-            ul.appendChild(li);
-            wordCount++;
-        });
-
-        // Display the word count in the header
-        const header = document.getElementById('header');
-        header.textContent = wordCount + ' từ vựng tiếng Anh chuyên ngành xây dựng';
-    
-    </script>
     <footer> Minh Khoa, Năm 4 Chuyên Ngành Xây Dựng - Liên hệ: 0867544809</footer>
     <div id="notice">
         <h4>Chú ý <span class="close-btn" onclick="closeNotice()">X</span></h4>

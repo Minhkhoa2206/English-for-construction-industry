@@ -5,7 +5,7 @@ def process_file():
     output = []
     for line in lines:
         parts = line.split('/')
-        output.append(parts[0].strip() + ': ' + parts[2].strip())
+        output.append(parts[0].strip() + ' ' + parts[2].strip())
 
     with open('output.txt', 'w', encoding='utf-8') as file:
         for line in output:
