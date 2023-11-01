@@ -1,5 +1,6 @@
 var data = [
     'Welcome. Let is learn specialized English together: Chào mừng bạn đến. Hãy cùng nhau học tiếng anh chuyên ngành',
+    'Construction company president: Chủ tịch công ty xây dựng',
     'Contractor : Nhà thầu',
     'Owner : Chủ nhà, Chủ đầu tư',
     'Resident architect : Kiến trúc sư thường trú',
