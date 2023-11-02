@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat with GPT-3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Chat with GPT-3</h1>
+    <div id="chatbox">
+        <!-- Chat messages will be added here -->
+    </div>
+    <input type="text" id="input" placeholder="Type your message here..." />
+    <button id="send">Send</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#send").click(function(){
+                var message = $("#input").val();
+                $.ajax({
+                    url: 'https://api.openai.com/v1/engines/davinci-codex/completions',
+                    type: 'POST',
+                    headers: {
+                        'Authorization': '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',
+                        'Content-Type': 'application/json'
+                    },
+                    data: JSON.stringify({
+                        'prompt': message,
+                        'max_tokens': 60
+                    }),
+                    success: function(data) {
+                        var response = data.choices[0].text.trim();
+                        $("#chatbox").append("<p>User: " + message + "</p>");
+                        $("#chatbox").append("<p>GPT-3: " + response + "</p>");
+                    },
+                    error: function() {
+                        alert("There was an error communicating with the API");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
